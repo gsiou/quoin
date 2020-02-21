@@ -1,0 +1,19 @@
+{
+  "name": "quoin",
+  "version": "0.0.0",
+  "description": "Dummy OAuth2 Authorization/Resource Server for Application Development/Testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsiou/quoin.git"
+  },
+  "author": "Georgios Anastasiou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsiou/quoin/issues"
+  },
+  "homepage": "https://github.com/gsiou/quoin#readme"
+}
