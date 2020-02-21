@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+const config = require('./config');
 app.set("view engine", "pug");
 
 app.get('/oauth', (req, res) => {
@@ -14,7 +14,7 @@ app.get('/oauth', (req, res) => {
   return res.sendStatus(200);
 });
 
-const server = app.listen(5099, '0.0.0.0', () => {
+const server = app.listen(config.port, config.address, () => {
   console.log(
     "Listening on: " + server.address().address + ":" + server.address().port
   );
