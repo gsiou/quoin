@@ -1,7 +1,9 @@
-include header.pug
-form(method='post' action='login')
-    label Username:
-        input(type='text' )
-    label Password:
-        input(type='password')
-    input(type='submit' value='Authenticate')
+html
+    include header.pug
+    body
+        form(method='post' action='login')
+            label Username:
+                input(type='text' )
+            label Password:
+                input(type='password')
+            input(type='submit' value='Authenticate')
