@@ -1,6 +1,21 @@
 const express = require("express");
+const session = require("express-session");
+const MemoryStore = require("memorystore")(session);
+
 const app = express();
 const config = require('./config');
+
+app.use(
+  session({
+    secret: config.appSecret,
+    resave: true,
+    saveUninitialized: false,
+    store: new MemoryStore({
+      checkPeriod: 8640000
+    })
+  })
+);
+
 
 app.set("view engine", "pug");
 

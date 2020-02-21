@@ -18,6 +18,8 @@
   "homepage": "https://github.com/gsiou/quoin#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "memorystore": "^1.6.2",
     "pug": "^2.0.4"
   }
 }
