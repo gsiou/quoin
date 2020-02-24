@@ -1,0 +1,26 @@
+html
+    include header.pug
+    body
+        h1 Auth Page
+        div
+            h2 Parameters Received
+            table
+                tbody
+                    tr
+                        td clientID
+                        td #{oauthData.clientID}
+                    tr
+                        td redirectURI
+                        td #{oauthData.redirectURI}
+                    tr
+                        td state
+                        td #{oauthData.state}
+                    tr
+                        td scope
+                        td #{oauthData.scope}
+                    tr
+                        td response_type
+                        td #{oauthData.response_type}
+        form(method='post' action='/code')
+            p You are about to authorize access to your data.
+            input(type='submit' value='Authorize')
